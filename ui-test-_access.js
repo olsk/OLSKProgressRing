@@ -5,7 +5,7 @@ Object.entries({
 
 	OLSKProgressRingCircle: '.OLSKProgressRingCircle',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('OLSKProgressRing_Access', function () {
