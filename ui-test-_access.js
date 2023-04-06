@@ -15,11 +15,11 @@ describe('OLSKProgressRing_Access', function () {
 	});
 
 	it('shows OLSKProgressRing', function () {
-		browser.assert.elements(OLSKProgressRing, 1);
+		return browser.assert.elements(OLSKProgressRing, 1);
 	});
 
 	it('shows OLSKProgressRingCircle', function () {
-		browser.assert.elements(OLSKProgressRingCircle, 1);
+		return browser.assert.elements(OLSKProgressRingCircle, 1);
 	});
 
 });

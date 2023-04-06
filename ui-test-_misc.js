@@ -14,11 +14,11 @@ describe('OLSKProgressRing_Misc', function () {
 	describe('OLSKProgressRing', function test_OLSKProgressRing () {
 
 		it('sets width', function () {
-			browser.assert.attribute(OLSKProgressRing, 'width', item.OLSKProgressRingSize);
+			return browser.assert.attribute(OLSKProgressRing, 'width', item.OLSKProgressRingSize);
 		});
 
 		it('sets height', function () {
-			browser.assert.attribute(OLSKProgressRing, 'height', item.OLSKProgressRingSize);
+			return browser.assert.attribute(OLSKProgressRing, 'height', item.OLSKProgressRingSize);
 		});
 
 	});
@@ -26,19 +26,19 @@ describe('OLSKProgressRing_Misc', function () {
 	describe('OLSKProgressRingCircle', function test_OLSKProgressRingCircle () {
 
 		it('sets fill', function () {
-			browser.assert.attribute(OLSKProgressRingCircle, 'fill', 'transparent');
+			return browser.assert.attribute(OLSKProgressRingCircle, 'fill', 'transparent');
 		});
 
 		it('sets r', function () {
-			browser.assert.attribute(OLSKProgressRingCircle, 'r', item.OLSKProgressRingBaseSize);
+			return browser.assert.attribute(OLSKProgressRingCircle, 'r', item.OLSKProgressRingBaseSize);
 		});
 
 		it('sets cx', function () {
-			browser.assert.attribute(OLSKProgressRingCircle, 'cx', item.OLSKProgressRingSize / 2);
+			return browser.assert.attribute(OLSKProgressRingCircle, 'cx', item.OLSKProgressRingSize / 2);
 		});
 
 		it('sets cy', function () {
-			browser.assert.attribute(OLSKProgressRingCircle, 'cy', item.OLSKProgressRingSize / 2);
+			return browser.assert.attribute(OLSKProgressRingCircle, 'cy', item.OLSKProgressRingSize / 2);
 		});
 
 	});
